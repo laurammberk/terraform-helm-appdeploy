@@ -32,6 +32,14 @@ module name {
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "nginx-ingress-controller"
   wait       = false
+
+  values     = [<<-EOF
+  
+  replicaCount = 1
+
+  EOF
+  ]
+
 }
 ```
 ### Run below code
