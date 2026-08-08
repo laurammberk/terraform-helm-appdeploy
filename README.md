@@ -26,7 +26,7 @@ provider "helm" {
 
 ```
 resource "helm_release" "this" {
-  source     = "assranova13/appdeploy/helm"
+  source     = "laurammberk/appdeploy/helm"
   name       = "nginx-ingress-controller"
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "nginx-ingress-controller"
